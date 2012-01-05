@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com.">
+    <meta name="author" content="Bartek Szopka" />
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+
+<div id="impress" class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
+    </div>
+
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <b><center> Rails Introduction</center> </b>
+<br/><br/>Web application framework based on Ruby
+<br/><br/>Less code compared to Other languages
+<br/><br/>DRY – “Don’t Repeat Yourself” 
+<br/><br/>Convention Over Configuration
+<br/><br/>REST full architecture
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <b><center> MVC Architecture </center> </b>
+ <br/> <br/>M – Model
+ <br/> <br/>V- View
+ <br/> <br/>C – Controller
+ <br/> <br/>Seperates Views from Business logics
+ <br/> <br/>Keep code DRY
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+        -<b><center>REST </center> </b>
+  <br/><br/>REST (Representational State Transfer)
+  <br/><br/>Access resource by URL
+  <br/><br/>DELETE /record/1
+    </div>
+
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+<b><center>Models </center> </b>
+ <br/><br/>Business logics.
+ <br/><br/> Represents the data and its relations.
+ <br/><br/> All your code that relates to your data
+   </div>
+
+
+
+    <div class="step slide" data-x="4000" data-y="-1500">
+<b><center>Views </center> </b>
+ <br/> <br/>User interface to display data.
+ <br/> <br/>Providing data to the Request  </div>
+
+
+
+    <div class="step slide" data-x="5000" data-y="-1500">
+<b><center>Controller </center> </b>
+ <br/> <br/>”Glue” between Model and Views
+ <br/> <br/> Responsible for processing the requests from the web browser </div>
+
+
+
+    <div class="step slide" data-x="6000" data-y="-1500">
+<b><center>Application structure </center> </b>
+ <br/> <br/><img src="images/structure.png"/> 
+ </div>
+
+
+
+    <div class="step slide" data-x="7000" data-y="-1500">
+<b><center>CreatingApplication </center> </b>
+ <br/> <br/>Create : rails new first_app 
+ <br/> <br/>   Run    : rails server  [ -p= port-number]
+ <br/> <br/>   Stop   :  Ctl+c
+ </div>
+
+
+
+
+    <div class="step slide" data-x="8000" data-y="-1500">
+<b><center>Configuration for DB </center> </b>
+ <br/> <br/> Edit for Configuration database.yml
+ <br/> <br/>  Default comes with Sqlite3
+ </div>
+
+
+    <div class="step slide" data-x="9000" data-y="-1500">
+<b><center>Scaffold </center> </b>
+ <br/> <br/> Creates Model ,Views and controller
+ <br/> <br/> Create scaffold: rails generate scaffold Person name:string age:integer
+ <br/> <br/>  rake db:create
+  <br/> <br/> rake db:migrate
+ </div>
+
+
+ <div class="step slide" data-x="10000" data-y="-1500">
+<b><center>Routes </center> </b>
+ <br/> <br/> Config/routes.rb 
+ <br/> <br/>  All possible REST Full url to access server  resources.
+ <br/> <br/>  ”resources” will create url for CURD operation
+ </div>
+
+
+<div class="step slide" data-x="0" data-y="-1500">
+<b><center>Routes </center> </b>
+ <br/> <br/> Config/routes.rb 
+ <br/> <br/>  All possible REST Full url to access server  resources.
+ <br/> <br/>  ”resources” will create url for CURD operation
+ </div>
+
+
+<div id="big" class="step slide" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>Any Questions <b>?</b></p>
+    </div>
+
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try"> SPRITLE </span>
+        <h1>Rails 3</h1>
+        <span class="footnote"> </span>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+         <ul>
+<li> Introduction to Rails3</li>
+<li>MVC Architecture</li>
+<li>REST Architecture</li>
+<li>Application Structure</li>
+<li>Creating Application</li>
+<li>Configuration for DB</li>
+<li>Scaffold</li>
+<li>Routes </li>
+         </ul>
+    </div>
+
+
+<script src="js/impress.js"></script>
+
+</body>
+</html>
